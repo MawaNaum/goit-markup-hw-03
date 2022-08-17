@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    --main-color: #212121;
+    }
+:root {
+    --main-color: #212121;
+    --second-color: #757575;
+    --third-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --background-color: #F5F4FA;
+    --second-background: #2F303A;
+}
+.list {
+    list-style-type: none;
+}
+.navigation {
+    background-color: var(--third-color)
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+}
+.logo-color {
+    color: var(--accent-color);
+}
+.logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--third-color);
+}
+.navlink {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.navlink:hover,
+.navlink:focus {
+    color: var(--accent-color);
+}
+.navlink-current {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+.contact-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color);
+}
+.shapka {
+    background-color: var(--second-background);
+}
+.title1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button-shapka {
+    font-family: inherit;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;       
+    letter-spacing: 0.06em;
+    color: var(--third-color);
+    border: none;
+    cursor: pointer;
+}
+.button-shapka:hover,
+.button-shapka:focus {
+    background: #188CE8;
+
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.feature {
+    background-color: #F5F5F5;
+}
+.feature-title {
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.feature-text {
+    line-height: 1.71;
+    color: var(--second-color);
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.team {
+    background-color: var(--background-color);
+}
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.team-position {
+    font-size: 16px;
+    line-height: 1.19; 
+    color: var(--second-color);
+}
+.footer {
+    background-color: var(--second-background);
+    color: var(--third-color);
+}
+.address {
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+}
+.physical-address {
+    line-height: 1.71;
+    color: var(--third-color);
+}
+.footer-contacts {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--accent-color);
+}
+.portfolio {
+    background: var(--third-color);
+
+}
+.filter {
+    background: var(--background-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.filter-current {
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background: var(--accent-color);
+    color: var(--third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.filter:hover,
+.filter:focus {
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--third-color);
+}
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}    
+.project-type {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--second-color);
+}
