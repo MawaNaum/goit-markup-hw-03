@@ -11,16 +11,20 @@ body {
     --accent-color: #2196F3;
     --background-color: #F5F4FA;
     --second-background: #2F303A;
+    --third-background: #F5F5F5;
 }
 h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 .container {
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+.container-border {
+    border-bottom: 1px solid #ECECEC;
 }
 .list {
     list-style-type: none;
@@ -99,16 +103,22 @@ a {
 }
 .shapka {
     background-color: var(--second-background);
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
+
 .title1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--third-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 696px;
+    margin: 0 auto;
 }
 .button-shapka {
     font-family: inherit;
@@ -122,11 +132,14 @@ a {
     color: var(--third-color);
     border: none;
     cursor: pointer;
+
+    padding: 10px 32px;
+    margin-top: 20px;
+
 }
 .button-shapka:hover,
 .button-shapka:focus {
     background: #188CE8;
-
 }
 .visually-hidden {
     position: absolute;
@@ -141,35 +154,79 @@ a {
     margin: -1px;
 }
 .feature {
-    background-color: #F5F5F5;
+    background-color: var(--third-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    align-items: center;
+}
+.feature-list {
+    display: flex;
+}
+.feature-item {
+    width: 270px;
+}
+.feature-item:not(:last-child) {
+    margin-right: 30px;
 }
 .feature-title {
     font-weight: 700;
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 .feature-text {
     line-height: 1.71;
     color: var(--second-color);
 }
+.business {
+    background-color: var(--third-color);
+    padding-bottom: 94px;
+}
 .section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.business-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .team {
     background-color: var(--background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .team-position {
     font-size: 16px;
     line-height: 1.19; 
     color: var(--second-color);
+    text-align: center;
+    padding-bottom: 30px;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.team-item {
+    width: 270px;
+    background-color: var(--third-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .footer {
     background-color: var(--second-background);
@@ -209,7 +266,8 @@ a {
 
 .portfolio {
     background: var(--third-color);
-
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .filter {
     background: var(--background-color);
@@ -221,8 +279,9 @@ a {
     text-align: center;
     border: none;
     cursor: pointer;
+    padding: 6px 22px;
 }
-.filter-current {
+.filter.current {
     border-radius: 4px;
     font-family: inherit;
     font-weight: 500;
@@ -247,14 +306,41 @@ a {
     border-radius: 4px;
     color: var(--third-color);
 }
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.project-discription {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .project-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }    
 .project-type {
     font-size: 16px;
     line-height: 1.88;
     color: var(--second-color);
+
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-item {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 370px;
 }
