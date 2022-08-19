@@ -12,12 +12,43 @@ body {
     --background-color: #F5F4FA;
     --second-background: #2F303A;
 }
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .list {
     list-style-type: none;
 }
+
 .navigation {
-    background-color: var(--third-color)
+    background-color: var(--third-color);
+    justify-content: space-between;
+    align-items: center;
 }
+
+.menu, 
+.navigation,
+.contact {
+    display: flex;
+}
+
+.navlink:not(:last-child),
+.contact-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navlink,
+.contact-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 a {
     text-decoration: none;
     color: currentColor;
@@ -50,7 +81,7 @@ a {
 .navlink:focus {
     color: var(--accent-color);
 }
-.navlink-current {
+.current {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -143,11 +174,23 @@ a {
 .footer {
     background-color: var(--second-background);
     color: var(--third-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .address {
     list-style-type: none;
     text-decoration: none;
     font-style: normal;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    padding-left: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 .physical-address {
     line-height: 1.71;
@@ -162,6 +205,8 @@ a {
 .footer-contacts:focus {
     color: var(--accent-color);
 }
+
+
 .portfolio {
     background: var(--third-color);
 
