@@ -3,6 +3,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     --main-color: #212121;
+    background-color: var(--third-color);
     }
 :root {
     --main-color: #212121;
@@ -33,23 +34,20 @@ img {
     padding-right: 15px;
 }
 .header {
-    background-color: var(--third-color);
     border-bottom: 1px solid #ECECEC;
 }
 .list {
     list-style-type: none;
 }
-
 .navigation {
-    align-items: center;
     margin-right: auto;
 }
-
-.header,
+.header-box,
 .menu, 
 .navigation,
 .contact {
     display: flex;
+    align-items: center;
 }
 
 .navlink:not(:last-child),
@@ -57,8 +55,8 @@ img {
     margin-right: 50px;
 }
 
-.navlink,
-.contact-link {
+.link {
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -74,9 +72,10 @@ a {
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
-
+    display: inline-block;
     margin-right: 93px;
-    padding-top: ;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .logo-color {
     color: var(--accent-color);
@@ -118,7 +117,6 @@ a {
 }
 .contact {
     align-items: center;
-    margin-left: auto;
 }
 .hero {
     background-color: var(--second-background);
@@ -360,6 +358,6 @@ a {
 }
 
 .project-item {
-    background: #FFFFFF;
+    background: var(--third-color);
     width: 370px;
 }
